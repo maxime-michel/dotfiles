@@ -1,0 +1,60 @@
+set number
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set timeoutlen=500
+
+let mapleader = ","
+noremap <Leader>y "+y
+noremap <Leader>p "+p
+noremap <Leader>P "+P
+
+" editing
+nnoremap gcc :action CommentByLineComment<CR>
+nnoremap <Leader>ca :action CloseAllEditorsButActive<CR>
+nnoremap <Leader>cr :action CopyReference<CR>
+nnoremap <Leader>cu :action CloseAllUnmodifiedEditors<CR>
+nnoremap <Leader>fu :action ToggleFullScreen<CR>
+nnoremap <Leader>ed :action HideAllWindows<CR>
+nnoremap <Leader>gt :action GotoTest<CR>
+nnoremap <Leader>oi :action OptimizeImports<CR>
+nnoremap <Leader>fu :action FindUsages<CR>
+nnoremap <Leader>gd :action GotoDeclaration<CR>
+nnoremap <Leader>gi :action GotoImplementation<CR>
+nnoremap <Leader>gs :action GotoSuperMethod<CR>
+nnoremap <Leader>md :action MethodDown<CR>
+nnoremap <Leader>mu :action MethodUp<CR>
+"nnoremap <Leader>re :action RenameElement<CR>
+nnoremap <Leader>rf :action ReformatCode<CR>
+"nnoremap <Leader>rf :action RenameFile<CR>
+
+" compiling
+nnoremap <Leader>dc :action ChooseDebugConfiguration<CR>
+nnoremap <Leader>hs :action Hotswap<CR>
+nnoremap <Leader>ma :action MakeModule<CR>
+nnoremap <Leader>mv :action Maven.Reimport<CR>
+
+" folding
+nnoremap <Leader>fo :action CollapseRegion<CR>
+nnoremap <Leader>uf :action ExpandRegion<CR>
+"{Collapse,Fold}All
+
+" debugging
+nnoremap <Leader>bp :action ToggleLineBreakpoint<CR>
+nnoremap <Leader>br :action ViewBreakpoints<CR>
+nnoremap <Leader>ev :action EvaluateExpression<CR>
+nnoremap <Leader>re :action Resume<CR>
+nnoremap <Leader>si :action StepInto<CR>
+nnoremap <Leader>so :action StepOut<CR>
+nnoremap <Leader>st :action Stop<CR>
+nnoremap <Leader>sv :action StepOver<CR>
+"SmartStepInto
+
+"nnoremap <Leader>su :action ShowUsages<CR>
+"nnoremap <Leader>cv :action ChangeView<CR>
+"nnoremap <Leader>q  :action CloseActiveTab<CR>
+"nnoremap [c :action VcsShowPrevChangeMarker<CR>
+"nnoremap ]c :action VcsShowNextChangeMarker<CR>
+"nnoremap ]e :action GotoNextError<CR>
+"nnoremap [e :action GotoPreviousError<CR>
