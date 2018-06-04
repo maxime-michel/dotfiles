@@ -161,7 +161,7 @@ endfunction
 function! GeneratePdf()
   silent write
   silent !rm -f ~/Desktop/%:t.pdf
-  silent !pandoc -V geometry:margin=1in -o ~/Desktop/%:t.pdf % --latex-engine=xelatex
+  silent !pandoc -V geometry:margin=1in -o ~/Desktop/%:t.pdf % --pdf-engine=xelatex
   !open ~/Desktop/%:t.pdf
 endfunction
 
