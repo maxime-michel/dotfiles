@@ -1,0 +1,7 @@
+# use 'rofi -show window', do not use with wayland (yet)
+rofi.window-format: {t:-16} ({c:10})
+rofi.dpi: 177
+rofi.levenshtein_sort: TRUE
+rofi.modi: window,drun
+rofi.location: 0
+rofi.show_icons: TRUE # coming soon
