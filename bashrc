@@ -50,6 +50,17 @@ cdf() {
    file=$(fzf -1 +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
 }
 
+alias wn=white_noise
+white_noise() {
+  pid=$(pgrep -f pinknoise)
+
+  if [ "$(cat /proc/$pid/status | grep stopped)" ]; then
+    pkill --signal 18 -f pinknoise
+  else
+    pkill --signal 19 -f pinknoise
+  fi
+}
+
 # os x specifics
 alias co='cd ~/Documents/Code/'
 function ll() { ls -Alh $@ | grep -v .DS_Store | grep -v .localized; }
