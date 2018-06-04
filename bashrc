@@ -61,9 +61,20 @@ white_noise() {
   fi
 }
 
-# os x specifics
-alias co='cd ~/Documents/Code/'
-function ll() { ls -Alh $@ | grep -v .DS_Store | grep -v .localized; }
-alias ls=ll
-export FIGNORE="DS_Store:localized:$FIGNORE"
-export HOMEBREW_NO_ANALYTICS=1
+# Same repo for all systems is the way to go
+system_type=$(uname -s)
+if [ "$system_type" = "Darwin" ]; then
+  # os x specifics
+  alias co='cd ~/Documents/Code/'
+  function ll() { ls -Alh $@ | grep -v .DS_Store | grep -v .localized; }
+  alias ls=ll
+  export FIGNORE="DS_Store:localized:$FIGNORE"
+  export HOMEBREW_NO_ANALYTICS=1
+else # linux specifics
+  # auto completion support: uncomment block in /etc/bash.bashrc (?)
+  alias co='cd ~/Documents/'
+  shopt -s globstar
+  alias ls='ls -Alh --color=auto'
+  alias grep='grep --color=auto'
+  export QT_AUTO_SCREEN_SCALE_FACTOR=1
+fi
