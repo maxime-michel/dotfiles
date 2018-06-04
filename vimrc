@@ -62,7 +62,6 @@ set colorcolumn=80
 set cursorline
 set display=lastline " show as much text as possible
 set gcr=n:blinkon0
-set guifont=Menlo\ Regular:h14
 set guioptions=c
 set listchars=tab:▸\ ,eol:¬
 set noruler
@@ -89,7 +88,6 @@ set timeoutlen=500
 nmap k gk
 nmap j gj
 noremap <Leader>bp :tabe ~/.bash_profile<CR>
-noremap <Leader>bu :tabe ~/Documents/scripts/build.sh<CR>
 noremap <Leader>fn :echo expand('%:p')<CR>
 noremap <Leader>hl :let @/=""<CR>
 noremap <Leader>i magg=G`azz
@@ -166,3 +164,13 @@ function! GeneratePdf()
   silent !pandoc -V geometry:margin=1in -o ~/Desktop/%:t.pdf % --latex-engine=xelatex
   !open ~/Desktop/%:t.pdf
 endfunction
+
+" Same repo for all systems is the way to go
+let OS=substitute(system('uname -s'),"\n","","")
+if (OS == "Darwin")
+  set guifont=Menlo\ Regular:h14
+  noremap <Leader>bu :tabe ~/Documents/scripts/build.sh<CR>
+else
+  set guifont=Monospace\ Regular:h12
+  noremap <Leader>bu :tabe ~/Documents/misc/build.sh<CR>
+endif
