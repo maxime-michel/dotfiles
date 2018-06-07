@@ -49,6 +49,7 @@ nnoremap <Leader>si :action StepInto<CR>
 nnoremap <Leader>so :action StepOut<CR>
 nnoremap <Leader>st :action Stop<CR>
 nnoremap <Leader>sv :action StepOver<CR>
+nnoremap <Leader>hi :action CallHierarchy<CR>
 "SmartStepInto
 
 "nnoremap <Leader>su :action ShowUsages<CR>
