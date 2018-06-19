@@ -6,7 +6,7 @@ esac
 
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
-HISTIGNORE="mpv*:youtube-dl*"
+HISTIGNORE="mpv*:youtube-dl*:wget*:adb*"
 
 # append to the history file, don't overwrite it
 shopt -s histappend
