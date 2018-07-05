@@ -7,6 +7,10 @@ c.url.start_pages = ["https://mail.protonmail.com/login"]
 c.editor.command = ["mvim", "-f", "{}"]
 c.qt.highdpi = True
 c.content.cookies.store = False
+c.content.canvas_reading = False
+c.content.geolocation = False
+c.content.notifications = False
+c.content.media_capture = False
 
 # downloads
 c.downloads.location.directory = "~/Desktop/"
