@@ -39,3 +39,10 @@ config.unbind('B')
 config.unbind('gb')
 config.unbind('d')
 config.unbind('T')
+
+# sane tab colors
+c.colors.tabs.selected.odd.fg = 'black'
+c.colors.tabs.selected.odd.bg = 'white'
+c.colors.tabs.selected.even.fg = 'black'
+c.colors.tabs.selected.even.bg = 'white'
+c.colors.tabs.even.bg = 'grey'
