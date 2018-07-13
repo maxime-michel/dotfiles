@@ -37,7 +37,6 @@ config.unbind('d')
 config.unbind('T')
 
 # fonts
-c.fonts.tabs = '14pt monospace'
 c.fonts.completion.entry = c.fonts.tabs
 c.fonts.debug_console = c.fonts.tabs
 c.fonts.downloads = c.fonts.tabs
