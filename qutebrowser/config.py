@@ -36,13 +36,6 @@ config.unbind('gb')
 config.unbind('d')
 config.unbind('T')
 
-# sane tab colors
-c.colors.tabs.selected.odd.fg = 'black'
-c.colors.tabs.selected.odd.bg = 'white'
-c.colors.tabs.selected.even.fg = 'black'
-c.colors.tabs.selected.even.bg = 'white'
-c.colors.tabs.even.bg = 'grey'
-
 # fonts
 c.fonts.tabs = '14pt monospace'
 c.fonts.completion.entry = c.fonts.tabs
