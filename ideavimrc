@@ -49,13 +49,12 @@ nnoremap <Leader>si :action StepInto<CR>
 nnoremap <Leader>so :action StepOut<CR>
 nnoremap <Leader>st :action Stop<CR>
 nnoremap <Leader>sv :action StepOver<CR>
-nnoremap <Leader>hi :action CallHierarchy<CR>
 "SmartStepInto
 
-"nnoremap <Leader>su :action ShowUsages<CR>
+nnoremap <Leader>hi :action CallHierarchy<CR>
+nnoremap <Leader>su :action ShowUsages<CR>
+
 "nnoremap <Leader>cv :action ChangeView<CR>
 "nnoremap <Leader>q  :action CloseActiveTab<CR>
-"nnoremap [c :action VcsShowPrevChangeMarker<CR>
-"nnoremap ]c :action VcsShowNextChangeMarker<CR>
 "nnoremap ]e :action GotoNextError<CR>
 "nnoremap [e :action GotoPreviousError<CR>
