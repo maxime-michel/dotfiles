@@ -32,6 +32,7 @@ alias kill='kill -9'
 export EDITOR=vim
 export CLICOLOR=true
 export CLICOLOR_FORCE=true
+export LESS=' -R '
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -70,6 +71,8 @@ if [ "$system_type" = "Darwin" ]; then
   alias ls=ll
   export FIGNORE="DS_Store:localized:$FIGNORE"
   export HOMEBREW_NO_ANALYTICS=1
+  # brew install source-highlight
+  export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
 else # linux specifics
   # auto completion support: uncomment block in /etc/bash.bashrc (?)
   alias co='cd ~/Documents/'
@@ -77,4 +80,6 @@ else # linux specifics
   alias ls='ls -Alh --color=auto'
   alias grep='grep --color=auto'
   export QT_AUTO_SCREEN_SCALE_FACTOR=1
+  # sudo apt-get install source-highlight
+  export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 fi
