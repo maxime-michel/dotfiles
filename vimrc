@@ -122,6 +122,15 @@ inoremap ( (<c-g>u
 inoremap ) )<c-g>u
 inoremap <CR> <CR><c-g>u
 
+" Automatically close brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 " Functions
 function! RenameFile()
   let old_name = expand('%')
