@@ -14,7 +14,7 @@ c.content.media_capture = False
 c.qt.highdpi = True
 c.tabs.title.format = "{title}"
 c.completion.height = "30%"
-c.completion.web_history_max_items = 1000
+c.completion.web_history.max_items = 1000
 
 # downloads
 c.downloads.location.directory = "~/Desktop/"
