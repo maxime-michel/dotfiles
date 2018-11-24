@@ -83,3 +83,17 @@ else # linux specifics
   # sudo apt-get install source-highlight
   export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 fi
+
+function qute_clean() {
+  # runtime folder is taken care of by a reboot
+
+  cd ~/Library/
+  rm -rf "Preferences/qutebrowser"
+  rm -rf "Caches/qutebrowser"
+
+  cd "Application Support/"
+  mv qutebrowser/blocked-hosts /tmp
+  rm -rf qutebrowser
+  mkdir qutebrowser
+  mv /tmp/blocked-hosts qutebrowser/
+}
