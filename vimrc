@@ -123,8 +123,8 @@ inoremap ) )<c-g>u
 inoremap <CR> <CR><c-g>u
 
 " Automatically close brackets
-inoremap " ""<left>
-inoremap ' ''<left>
+"inoremap " ""<left>
+"inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
