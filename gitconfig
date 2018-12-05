@@ -1,6 +1,5 @@
 [user]
 	name = Maxime Michel
-        #email = maxime.michel@magnolia-cms.com
         email = maxime-michel@users.noreply.github.com
 [core]
 	excludesfile = /Users/maxime/.gitignore_global
