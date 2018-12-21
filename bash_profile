@@ -23,6 +23,7 @@ source ~/.git-completion.bash
 source ~/.fzf.bash
 source ~/.git-prompt.sh
 source ~/.git.sh
+source ~/.magnolia.sh
 
 alias ag='ag --smart-case --pager="less -MIRFX"'
 alias dk='cd ~/Desktop'
