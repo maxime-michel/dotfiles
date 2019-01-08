@@ -29,6 +29,8 @@ alias ag='ag --smart-case --pager="less -MIRFX"'
 alias dk='cd ~/Desktop'
 alias kill='kill -9'
 
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 export EDITOR=vim
 export CLICOLOR=true
 export CLICOLOR_FORCE=true
