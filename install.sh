@@ -9,6 +9,7 @@ ln -s ~/Documents/dotfiles/gitconfig        ~/.gitconfig
 ln -s ~/Documents/dotfiles/config           ~/.config
 ln -s ~/Documents/dotfiles/ideavimrc        ~/.ideavimrc
 ln -s ~/Documents/dotfiles/qutebrowser      ~/.qutebrowser
+ln -s ~/Documents/dotfiles/ssh/config       ~/.ssh/config
 
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
