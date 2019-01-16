@@ -64,27 +64,15 @@ white_noise() {
   fi
 }
 
-# Same repo for all systems is the way to go
-system_type=$(uname -s)
-if [ "$system_type" = "Darwin" ]; then
-  # os x specifics
-  alias co='cd ~/Documents/Code/'
-  function ll() { ls -Alh $@ | grep -v .DS_Store | grep -v .localized; }
-  alias ls=ll
-  export FIGNORE="DS_Store:localized:$FIGNORE"
-  export HOMEBREW_NO_ANALYTICS=1
-  # brew install source-highlight
-  export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
-else # linux specifics
-  # auto completion support: uncomment block in /etc/bash.bashrc (?)
-  alias co='cd ~/Documents/'
-  shopt -s globstar
-  alias ls='ls -Alh --color=auto'
-  alias grep='grep --color=auto'
-  export QT_AUTO_SCREEN_SCALE_FACTOR=1
-  # sudo apt-get install source-highlight
-  export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
-fi
+# os x specifics, TODO: move in correct locations
+alias co='cd ~/Documents/Code/'
+function ll() { ls -Alh $@ | grep -v .DS_Store | grep -v .localized; }
+alias ls=ll
+export FIGNORE="DS_Store:localized:$FIGNORE"
+export HOMEBREW_NO_ANALYTICS=1
+# brew install source-highlight
+export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+alias grep='grep --color=auto'
 
 function qute_clean() {
   # runtime folder is taken care of by a reboot
