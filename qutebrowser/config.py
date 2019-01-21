@@ -38,6 +38,8 @@ config.unbind('B')
 config.unbind('gb')
 config.unbind('d')
 config.unbind('T')
+config.unbind('m')
+config.unbind('M')
 
 # sane tab colors
 c.colors.tabs.selected.odd.fg = 'black'
