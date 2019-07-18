@@ -12,7 +12,7 @@ c.content.media_capture = False
 
 # looks
 c.qt.highdpi = True
-c.tabs.title.format = "{title}"
+c.tabs.title.format = "{current_title}"
 c.completion.height = "30%"
 c.completion.web_history.max_items = 1000
 
