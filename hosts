@@ -13,5 +13,7 @@
 127.0.0.1 lejdd.fr www.lejdd.fr
 127.0.0.1 lemonde.fr www.lemonde.fr
 127.0.0.1 lalsace.fr www.lalsace.fr
-127.0.0.1 www.nytimes.com nytimes.com
-127.0.0.1 www.slate.fr slate.fr
+127.0.0.1 nytimes.com www.nytimes.com
+127.0.0.1 slate.fr www.slate.fr
+127.0.0.1 20min.ch www.20min.ch
+127.0.0.1 20minutes.fr www.20minutes.fr
