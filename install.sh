@@ -10,11 +10,6 @@ ln -s ~/Documents/dotfiles/ideavimrc        ~/.ideavimrc
 ln -s ~/Documents/dotfiles/qutebrowser      ~/.qutebrowser
 ln -s ~/Documents/dotfiles/ssh/config       ~/.ssh/config
 
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-mv git-completion.bash ~/.git-completion.bash
-mv git-prompt.sh ~/.git-prompt.sh
-
 mkdir ~/.tmp
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
