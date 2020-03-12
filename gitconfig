@@ -4,7 +4,10 @@
 [core]
 	excludesfile = /Users/maxime/.gitignore_global
 	longpaths = true
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [push]
 	default = current
 [init]
 	templatedir = ~/.git_template
+[diff-so-fancy]
+	markEmptyLines = false
