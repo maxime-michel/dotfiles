@@ -1,6 +1,5 @@
 #!/bin/bash
 
-ln -s ~/Documents/dotfiles/bash_profile     ~/.bash_profile
 ln -s ~/Documents/dotfiles/git.sh           ~/.git.sh
 ln -s ~/Documents/dotfiles/git_template     ~/.git_template
 ln -s ~/Documents/dotfiles/gitignore_global ~/.gitignore_global
