@@ -1,14 +1,10 @@
 #!/bin/bash
 
-ln -s ~/Documents/dotfiles/git.sh           ~/.git.sh
-ln -s ~/Documents/dotfiles/git_template     ~/.git_template
 ln -s ~/Documents/dotfiles/gitignore_global ~/.gitignore_global
 ln -s ~/Documents/dotfiles/vimrc            ~/.vimrc
 ln -s ~/Documents/dotfiles/gitconfig        ~/.gitconfig
 ln -s ~/Documents/dotfiles/config           ~/.config
-ln -s ~/Documents/dotfiles/ideavimrc        ~/.ideavimrc
 ln -s ~/Documents/dotfiles/qutebrowser      ~/.qutebrowser
-ln -s ~/Documents/dotfiles/ssh/config       ~/.ssh/config
 
 mkdir ~/.tmp
 
