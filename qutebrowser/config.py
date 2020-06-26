@@ -49,15 +49,16 @@ c.colors.tabs.selected.even.bg = 'white'
 c.colors.tabs.even.bg = 'grey'
 
 # fonts
-c.fonts.tabs = '14pt monospace'
-c.fonts.completion.entry = c.fonts.tabs
-c.fonts.debug_console = c.fonts.tabs
-c.fonts.downloads = c.fonts.tabs
-c.fonts.keyhint = c.fonts.tabs
-c.fonts.messages.error = c.fonts.tabs
-c.fonts.messages.info = c.fonts.tabs
-c.fonts.messages.warning = c.fonts.tabs
-c.fonts.statusbar = c.fonts.tabs
+c.fonts.tabs.selected = '14pt monospace'
+c.fonts.tabs.unselected = c.fonts.tabs.selected
+c.fonts.completion.entry = c.fonts.tabs.selected
+c.fonts.debug_console = c.fonts.tabs.selected
+c.fonts.downloads = c.fonts.tabs.selected
+c.fonts.keyhint = c.fonts.tabs.selected
+c.fonts.messages.error = c.fonts.tabs.selected
+c.fonts.messages.info = c.fonts.tabs.selected
+c.fonts.messages.warning = c.fonts.tabs.selected
+c.fonts.statusbar = c.fonts.tabs.selected
 c.fonts.hints = 'bold 14pt monospace'
 c.fonts.completion.category = c.fonts.hints
 c.fonts.prompts = '14pt sans-serif'
