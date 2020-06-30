@@ -8,7 +8,7 @@
 127.0.0.1 www.greenweez.com greenweez.com
 127.0.0.1 www.tvlibertes.com tvlibertes.com
 
-# fake news
+# fake news / propaganda
 127.0.0.1 rts.ch www.rts.ch
 127.0.0.1 bilan.ch www.bilan.ch
 127.0.0.1 lejdd.fr www.lejdd.fr
@@ -18,3 +18,7 @@
 127.0.0.1 slate.fr www.slate.fr
 127.0.0.1 20min.ch www.20min.ch
 127.0.0.1 20minutes.fr www.20minutes.fr
+127.0.0.1 letemps.ch www.letemps.ch
+127.0.0.1 swissinfo.ch www.swissinfo.ch
+127.0.0.1 google.ch www.google.ch
+127.0.0.1 google.fr www.google.fr
