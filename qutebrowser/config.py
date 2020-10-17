@@ -8,7 +8,9 @@ c.content.cookies.store = False
 c.content.canvas_reading = False
 c.content.geolocation = False
 c.content.notifications = False
-c.content.media_capture = False
+c.content.media.audio_capture = False
+c.content.media.video_capture = False
+c.content.media.audio_video_capture = False
 
 # looks
 c.qt.highdpi = True
