@@ -1,5 +1,4 @@
-c.tabs.background = True
-c.editor.command = ["mvim", "-f", "{}"]
+config.load_autoconfig()
 
 # content
 c.url.default_page = "about:blank"
