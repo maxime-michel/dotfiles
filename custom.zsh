@@ -1,6 +1,8 @@
 fignore=(DS_Store localized)
 
+export PATH="/opt/homebrew/bin:$PATH"
 export HOMEBREW_NO_ANALYTICS=1
+
 export FZF_DEFAULT_OPTS='
   --exact
   --color bg:255,pointer:255
