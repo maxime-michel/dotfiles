@@ -10,6 +10,7 @@ export FZF_DEFAULT_OPTS='
   --color fg:238,fg+:238,marker:238
   --color hl+:67,bg+:153,prompt:30,hl:241
 '
+export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 alias dk='cd ~/Desktop'
