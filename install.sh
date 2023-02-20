@@ -12,3 +12,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # plugins=(git git-prompt fzf)
+
+# ftplugin quirk that appeared randomly one day
+mkdir -p .vim/after/ftplugin/ && echo "set shiftwidth=2" >> ~/.vim/after/ftplugin/markdown.vim
