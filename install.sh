@@ -14,4 +14,4 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # plugins=(git git-prompt fzf)
 
 # ftplugin quirk that appeared randomly one day
-mkdir -p .vim/after/ftplugin/ && echo "set shiftwidth=2" >> ~/.vim/after/ftplugin/markdown.vim
+mkdir -p .vim/after/ftplugin/ && echo "set shiftwidth=2\nset softtabstop=2" >> ~/.vim/after/ftplugin/markdown.vim
